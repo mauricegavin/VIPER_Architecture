@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+<!--        <import type="com.mauricegavin.viper_application.viper_single_view.submodules.submoduleX.ui.viewModels.VIPERFragmentViewModel"/>-->
+
+<!--        <variable
+            name="viewModel"
+            type="com.mauricegavin.viper_application.viper_single_view.submodules.submoduleX.ui.viewModels.VIPERFragmentViewModel"/>-->
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <import type="com.mauricegavin.viper_application.viper_single_view.ui.viewModels.VIPERActivityViewModel"/>
+
+        <variable
+            name="viewModel"
+            type="com.mauricegavin.viper_application.viper_single_view.ui.viewModels.VIPERActivityViewModel"/>
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/viper_activity_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/viper_activity_app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/viper_toolbar_collapsing_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/VIPER_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="pin"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:title="{viewModel.toolbarTitle}"
+                    />
+                    <!--android:theme="@style/CustomToolbarStyle"-->
+
+                <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+            </android.support.design.widget.AppBarLayout>
+
+<!--            <fragment
+                android:id="@+id/viper_activity_fragment_container"
+                android:name="com.toothpic.app.createCard.addCardDetails.ui.AddCardDetailsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                tools:layout="@layout/fragment_add_card_details"/>-->
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
